@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	html{ backgound-color: #777;}
+
+* main>* 
+    {margin: 10px
+    padding:10px }
+    nav {background-color: #ddd;}
+ header , footer { text-align: center; background: #ddaa00; color: white} 
+ main {background-color: white;}
+    body, nav, main, article {
+      display: flex;
+        
+    }
+    body, article {
+      flex-direction: column; background-color: white; margin: 40px;
+      
+    }
+    nav>button{flex: 1.0;margin: 0 5px;}
+    article {
+      flex: 1 1 33%;
+    }
+</style>
+<script language="JavaScript" type="text/javascript">
+function validate() {
+if (document.form1.yourname.value.length < 5) {
+alert("Please enter your full name.");
+return false;
+}
+if (document.form1.address.value.length < 3) {
+alert("Please enter correct address.");
+return false;
+}
+if (document.form1.phone.value.length < 10) {
+alert("Please enter correct phone number.");
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<main>
+<article>Registered Address </article>
+<article> Connect With Us</article>
+</main>
+<main>
+<article> 334/15 prashand Bunglow <br>Opp. Garware College,karve Road,Pune<br>441104 India<br>inquiry@import.exporter.com<br>Call US :6789456738/8764903678</article>
+<article>
+<form name="form1" action="mailto:user@host.com" enctype="text/plain"
+method="POST" onSubmit="return validate();">
+<table>
+<tr><td><p>Name: <input type="TEXT" size="20" name="yourname">
+</p></td><td><p>Mobile Number:  <input type="number" size="10" name="Mobile Number">
+</p></td></tr>
+<tr><td><p>Address: <input type="TEXT" size="18" name="address">
+</p></td>
+<td><p>Company Name:  <input type="TEXT" size="20" name="company name">
+</p></td></tr>
+
+<tr><td colspan="2"><textarea name="message" style="width:300px; height:100px;">
+Message
+</textarea><br></td></tr>
+<center><tr><td colspan="2"><button width="10px" height="10px">send</button></td></tr></center>
+</table>
+
+
+</form>
+</article>
+</main>
+</body>
+</html>
